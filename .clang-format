@@ -1,0 +1,35 @@
+---
+BasedOnStyle: Google
+IndentWidth: 4
+TabWidth: 4
+ColumnLimit: 100
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+PointerAlignment: Left
+SpacesInParentheses: false
+SpaceBeforeParens: ControlStatements
+AlwaysBreakTemplateDeclarations: Yes
+EmptyLineBeforeAccessModifier: Always
+IndentRequires: true
+SortIncludes: true
+IncludeBlocks: Regroup
+# C++ specific tweaks
+DerivePointerAlignment: false
+IncludeCategories:
+  - Regex: '^<glad/.*>'
+    Priority: 10
+
+  - Regex: '^<[^/.]*>$'
+    Priority: 20
+  
+  - Regex: '^<.*'
+    Priority: 30
+  
+  - Regex: '^"dronelab/.*"'
+    Priority: 40
+  
+  - Regex: '.*'
+    Priority: 50
+
+IncludeIsMainRegex: '.*'

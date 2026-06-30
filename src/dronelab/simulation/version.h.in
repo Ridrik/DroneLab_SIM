@@ -1,0 +1,26 @@
+#ifndef DRONELAB_SIMULATION_VERSION_H
+#define DRONELAB_SIMULATION_VERSION_H
+
+// clang-format off
+#include <string_view>
+#define PROJECT_VERSION_MAJOR @PROJECT_VERSION_MAJOR@
+#define PROJECT_VERSION_MINOR @PROJECT_VERSION_MINOR@
+#define PROJECT_VERSION_PATCH @PROJECT_VERSION_PATCH@
+#define PROJECT_VERSION "@PROJECT_VERSION@"
+
+namespace dronelab::sim::version {
+
+constexpr std::string_view kName = "DroneLab";
+constexpr std::string_view kDescription = "@PROJECT_DESCRIPTION@";
+constexpr std::string_view kBuildID = "@UNIQUE_BUILD_ID@";
+constexpr std::string_view kFullBuildInfo = "v@PROJECT_VERSION@_@UNIQUE_BUILD_ID@";
+constexpr int kMajor = @PROJECT_VERSION_MAJOR@;
+constexpr int kMinor = @PROJECT_VERSION_MINOR@;
+constexpr int kPatch = @PROJECT_VERSION_PATCH@;
+constexpr std::string_view kString = "@PROJECT_VERSION@";
+
+}  // namespace dronelab::version
+
+// clang-format on
+
+#endif  // DRONELAB_SIMULATION_VERSION_H
