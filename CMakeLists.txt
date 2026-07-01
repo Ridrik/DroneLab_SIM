@@ -51,11 +51,10 @@ set(SIMULATION_SOURCES
 set(DRONELAB_SDK_DIR "${CMAKE_CURRENT_SOURCE_DIR}/dist")
 
 list(APPEND CMAKE_PREFIX_PATH
-    "${SDK_ROOT}"
-    "${SDK_ROOT}/lib/cmake"
+    "${DRONELAB_SDK_DIR}"
+    "${DRONELAB_SDK_DIR}/lib/cmake"
 )
 
-list(APPEND CMAKE_PREFIX_PATH "${DRONELAB_SDK_DIR}")
 if (NOT TARGET DroneLab::Core)
     find_package(DroneLab REQUIRED CONFIG)
 endif()
