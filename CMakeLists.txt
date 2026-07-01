@@ -13,6 +13,9 @@ project(DroneLab_SIM
     LANGUAGES CXX C
 )
 
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 configure_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/src/dronelab/simulation/version.h.in"
     "${CMAKE_CURRENT_BINARY_DIR}/src/dronelab/simulation/version.h"
