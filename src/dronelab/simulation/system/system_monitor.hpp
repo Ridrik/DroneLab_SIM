@@ -1,6 +1,9 @@
 #ifndef DRONELAB_SIMULATION_SYSTEM_SYSTEM_MONITOR_HPP
 #define DRONELAB_SIMULATION_SYSTEM_SYSTEM_MONITOR_HPP
 
+#include <mutex>
+#include <ranges>
+
 #include "dronelab/api/core/context.hpp"
 #include "dronelab/api/core/node.hpp"
 #include "dronelab/api/core/pub_sub.hpp"

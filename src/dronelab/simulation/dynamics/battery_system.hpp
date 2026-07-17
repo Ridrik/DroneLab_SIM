@@ -1,6 +1,9 @@
 #ifndef DRONELAB_SIMULATION_DYNAMICS_BATTERY_SYSTEM_HPP
 #define DRONELAB_SIMULATION_DYNAMICS_BATTERY_SYSTEM_HPP
 
+#include <atomic>
+#include <mutex>
+
 #include "dronelab/api/core/context.hpp"
 #include "dronelab/api/core/node.hpp"
 #include "dronelab/api/core/pub_sub.hpp"

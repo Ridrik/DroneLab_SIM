@@ -1,5 +1,7 @@
 #include "dronelab/simulation/navigation/rtl_behaviour.hpp"
 
+#include <mutex>
+
 #include <Eigen/src/Core/Matrix.h>
 #include <spdlog/spdlog.h>
 

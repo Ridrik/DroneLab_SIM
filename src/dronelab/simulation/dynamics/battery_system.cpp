@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <atomic>
 #include <cstdint>
+#include <mutex>
 #include <ranges>
 
 #include "dronelab/api/core/context.hpp"

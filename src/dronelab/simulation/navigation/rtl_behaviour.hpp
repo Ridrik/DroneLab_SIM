@@ -1,6 +1,10 @@
 #ifndef DRONELAB_SIMULATION_NAVIGATION_RTL_BEHAVIOUR_HPP
 #define DRONELAB_SIMULATION_NAVIGATION_RTL_BEHAVIOUR_HPP
 
+#include <atomic>
+#include <cstdint>
+#include <mutex>
+
 #include <Eigen/Dense>
 #include <Eigen/src/Core/Matrix.h>
 

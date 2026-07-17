@@ -1,6 +1,8 @@
 #ifndef DRONELAB_SIMULATION_NAVIGATION_LOITER_BEHAVIOUR_HPP
 #define DRONELAB_SIMULATION_NAVIGATION_LOITER_BEHAVIOUR_HPP
 
+#include <mutex>
+
 #include "dronelab/api/core/node.hpp"
 #include "dronelab/api/core/pub_sub.hpp"
 #include "dronelab/api/simulation/common/config.hpp"

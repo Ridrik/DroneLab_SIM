@@ -1,5 +1,7 @@
 #include "dronelab/simulation/navigation/loiter_behaviour.hpp"
 
+#include <mutex>
+
 #include <spdlog/spdlog.h>
 
 #include "dronelab/api/core/node.hpp"

@@ -1,6 +1,11 @@
 #ifndef DRONELAB_SIMULATION_MANAGEMENT_FLIGHT_MANAGER_HPP
 #define DRONELAB_SIMULATION_MANAGEMENT_FLIGHT_MANAGER_HPP
 
+#include <atomic>
+#include <cstdint>
+#include <mutex>
+#include <optional>
+
 #include "dronelab/api/core/context.hpp"
 #include "dronelab/api/core/node.hpp"
 #include "dronelab/api/core/pub_sub.hpp"
