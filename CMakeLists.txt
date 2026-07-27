@@ -8,7 +8,7 @@ endif()
 set(CMAKE_CXX_SCAN_FOR_MODULES OFF)
 
 project(DroneLab_SIM 
-    VERSION 0.1.0
+    VERSION 0.1.1
     DESCRIPTION "DroneLab open-source Simulation modules"
     LANGUAGES CXX C
 )
