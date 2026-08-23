@@ -357,7 +357,7 @@ void FlightManager::receivedSimReport() {
         SimReportable wpReport;
         const auto& wp = wpProg.waypoint;
         wpReport.value("id", wp.id);
-        wpReport.value("position", {wp.position.x(), wp.position.y(), wp.position.z()});
+        wpReport.value("position", wp.position);
         wpReport.value("yaw", wp.yaw);
         wpReport.value("status", msg::waypointStatusToString(wpProg.status));
         wpReport.value("tolerance", wp.acceptanceRadius);
