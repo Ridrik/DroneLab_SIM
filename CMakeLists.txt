@@ -75,7 +75,7 @@ set_target_properties(DroneLab_SIM PROPERTIES
     VISIBILITY_INLINES_HIDDEN YES
 )
 
-target_link_libraries(DroneLab_SIM PRIVATE DroneLab_SIM_Headers DroneLab::Core DroneLab::Math DroneLab::task DroneLab::fault)
+target_link_libraries(DroneLab_SIM PRIVATE DroneLab_SIM_Headers DroneLab::Core Eigen3::Eigen DroneLab::task DroneLab::fault)
 if(WIN32)
     set(DRONELAB_EXE_DIR "${DRONELAB_SDK_DIR}")
     set(DRONELAB_EXE "${DRONELAB_EXE_DIR}/DroneLab.exe")
