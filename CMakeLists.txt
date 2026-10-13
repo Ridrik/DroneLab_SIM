@@ -55,7 +55,7 @@ list(APPEND CMAKE_PREFIX_PATH
 )
 
 if (NOT TARGET DroneLab::Core)
-    find_package(DroneLab REQUIRED CONFIG)
+    find_package(DroneLab 0.6.2 CONFIG REQUIRED)
 endif()
 
 find_package(spdlog REQUIRED)
