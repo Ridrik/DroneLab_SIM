@@ -33,7 +33,7 @@ TMP=$(mktemp)
 
 curl -fL "$URL" -o "$TMP"
 
-tar -xzf "$TMP" -C "$DIST_DIR" --strip-components=1
+tar -xzf "$TMP" -C "$DIST_DIR"
 
 rm "$TMP"
 
